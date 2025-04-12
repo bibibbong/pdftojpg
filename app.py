@@ -64,4 +64,4 @@ def convert_pdf_to_images():
         return jsonify({'error': 'PDF 파일만 업로드 가능합니다.'}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
